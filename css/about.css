@@ -1,0 +1,528 @@
+* {
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(images/hackerwall.jpg);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#menuBtn {
+  display: none;
+}
+#sideNav {
+  display: none;
+}
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.left-col {
+  flex-basis: 50%;
+  margin: 50px 5px 70px;
+  color: white;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+.left-col h1 {
+  color: white;
+}
+h1::after {
+  content: "";
+  display: block;
+  width: 55%;
+  border-bottom: 1px solid #4672fe;
+}
+
+.left-col p {
+  color: white;
+  max-width: 70%;
+}
+.right-col {
+  flex-basis: 50%;
+  color: white;
+  margin-top: 50px;
+  animation-duration: 3s;
+  animation-name: slideinright;
+  animation-iteration-count: 1;
+}
+
+#hard-skills h2 {
+  color: #4672fe;
+}
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2px;
+}
+.skills {
+  flex-basis: 50%;
+}
+.skills2 {
+  flex-basis: 50%;
+}
+.skills2 h2 {
+  color: #4672fe;
+}
+.skills h3 {
+  padding-top: 2px;
+}
+.progress {
+  width: 100%;
+  max-width: 200px;
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progress-bar {
+  display: block;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #ffd33d,
+    #ea4aaa 17%,
+    #b34bff 34%,
+    #b34bff 51%,
+    #ffd33d 68%,
+    #ea4aaa 85%,
+    #b34bff
+  );
+  background-size: 300% 100%;
+  animation: progress-animation 2s linear infinite;
+}
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+/*--------------------*/
+
+.nav-bar {
+  margin-top: 0;
+  position: sticky;
+  top: 0;
+}
+
+.nav-list {
+  margin-left: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+}
+.nav-list li {
+  float: right;
+}
+.nav-list li a {
+  text-decoration: none;
+  padding: 16px;
+  color: white;
+  font-weight: 600;
+  display: block;
+  transition: 0.5s;
+}
+
+#ha {
+  margin: auto;
+  width: 15%;
+  border: 0;
+  border-top: 4px solid #4672fe;
+  border-radius: 10px;
+  transition: 0.5s;
+  animation-duration: 4s;
+  animation-name: haslidein;
+  animation-iteration-count: infinite;
+}
+@keyframes haslidein {
+  0% {
+    width: 15%;
+  }
+  50% {
+    width: 20%;
+  }
+
+  100% {
+    width: 15%;
+  }
+}
+#hb {
+  margin: auto;
+  width: 10%;
+  border: 0;
+  border-top: 4px solid #4672fe;
+  border-radius: 10px;
+  transition: 0.5s;
+  animation-duration: 4s;
+  animation-name: hbslidein;
+  animation-iteration-count: infinite;
+}
+@keyframes hbslidein {
+  0% {
+    width: 10%;
+  }
+  50% {
+    width: 15%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+#hc {
+  margin: auto;
+  width: 5%;
+  border: 0;
+  border-top: 4px solid #4672fe;
+  border-radius: 10px;
+  transition: 0.5s;
+  animation-duration: 4s;
+  animation-name: hcslidein;
+  animation-iteration-count: infinite;
+}
+@keyframes hcslidein {
+  0% {
+    width: 5%;
+  }
+  50% {
+    width: 10%;
+  }
+
+  100% {
+    width: 5%;
+  }
+}
+.nav-list li a:hover {
+  background-color: #4672fe;
+  color: white;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+li.dropdown {
+  display: inline-block;
+  transition: 0.5s;
+}
+.dropdown:hover .dropbtn {
+  background-color: #4672fe;
+  transition: 0.5s;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4672fe;
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.dropdown-content a {
+  display: block;
+  text-align: left;
+  transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#bttn:hover {
+  background-color: black;
+  color: white;
+}
+
+#logo {
+  width: 60px;
+  margin: 0 50px 150px;
+}
+
+.header-text h1 {
+  font-family: sans-serif;
+  animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  color: #4672fe;
+  margin-left: 100px;
+  transition: 0.5s;
+}
+@keyframes slidein {
+  0% {
+    margin-left: -450px;
+  }
+  50% {
+    margin-left: 100px;
+  }
+
+  100% {
+    margin-left: 5px;
+  }
+}
+.left-col p {
+  max-width: 545px;
+}
+.right-col {
+  margin-left: 30px;
+}
+.right-col ul li {
+  max-width: 500px;
+  margin-left: -20px;
+}
+.button {
+  margin: 150px auto auto 100px;
+  padding: 10px 10px;
+  font-size: 11px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #4672fe;
+  color: white;
+  border: 1px solid #4672fe;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: sans-serif;
+  transition: 0.5s;
+  animation-duration: 3.5s;
+  animation-name: buttonslidein;
+  animation-iteration-count: 1;
+}
+@keyframes buttonslidein {
+  0% {
+    margin-left: -10000px;
+  }
+  100% {
+    margin-left: 100px;
+  }
+}
+.button:hover {
+  background-color: white;
+  border: 1px solid #4672fe;
+  color: #4672fe;
+}
+.socials {
+  position: fixed;
+  top: 60%;
+  right: 0%;
+  animation-duration: 3s;
+  animation-name: socialslidein;
+  animation-iteration-count: 1;
+}
+@keyframes socialslidein {
+  0% {
+    top: 120%;
+  }
+  100% {
+    top: 60%;
+  }
+}
+
+.socials ul {
+  list-style-type: none;
+}
+
+.socials img {
+  width: 50px;
+  transition: 0.5s;
+}
+.socials img:hover {
+  width: 80px;
+}
+
+@media only screen and (max-width: 1255px) {
+  body {
+    overflow-y: auto;
+  }
+  #header {
+    background-position: center;
+  }
+  .nav-bar {
+    background-color: black;
+  }
+  .nav-list li a {
+    padding: 14px;
+    font-size: 13px;
+    font-weight: 550;
+  }
+
+  #logo {
+    width: 60px;
+    margin: 5px 50px 80px;
+  }
+  .header-text h1 {
+    font-size: 19px;
+
+    margin: 100px auto auto 10px;
+  }
+  .header-text span {
+    color: white;
+    font-size: 25px;
+  }
+  @keyframes slidein {
+    0% {
+      margin-left: -450px;
+    }
+    50% {
+      margin-left: 100px;
+    }
+
+    100% {
+      margin-left: 10px;
+    }
+  }
+  .button {
+    margin: 200px auto auto 10px;
+    padding: 5px 10px;
+    font-weight: 600;
+  }
+  @keyframes buttonslidein {
+    0% {
+      margin-left: -10000px;
+    }
+    100% {
+      margin-left: 10px;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left-col {
+    flex-basis: 75%;
+    margin-left: 10px;
+    margin-top: 5px;
+    animation: none;
+  }
+
+  .right-col {
+    flex-basis: 100%;
+    color: white;
+    margin-top: -80px;
+    margin-left: 10px;
+  }
+  .right-col h1 {
+    margin-top: 50px;
+  }
+
+  .skills {
+    flex-basis: 100%;
+  }
+  .skills2 {
+    flex-basis: 70%;
+  }
+  .skills h2 {
+    font-size: 15px;
+  }
+  .skills2 h3 {
+    font-size: 14px;
+  }
+  .left-col h1 {
+    font-size: 19px;
+
+    margin: 100px auto auto 0;
+  }
+  .left-col p {
+    font-size: 15px;
+  }
+  .progress {
+    width: 100%;
+    max-width: 260px;
+    height: 6px;
+    background: #e1e4e8;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 770px) {
+  #menuBtn {
+    display: block;
+    height: 50px;
+    width: 40px;
+    position: fixed;
+    top: 16;
+    right: 0;
+    z-index: 10;
+  }
+  .nav-bar {
+    display: none;
+  }
+  #ha {
+    margin-top: 10px;
+    width: 20%;
+  }
+  @keyframes haslidein {
+    0% {
+      width: 20%;
+    }
+    50% {
+      width: 25%;
+    }
+
+    100% {
+      width: 20%;
+    }
+  }
+  .skills h2 {
+    font-size: 15px;
+  }
+  .skills2 h3 {
+    font-size: 14px;
+  }
+  .left-col h1 {
+    font-size: 18px;
+
+    margin: 80px auto auto 0;
+  }
+  .right-col ul li {
+    max-width: 310px;
+    margin-left: -20px;
+  }
+  .progress {
+    width: 50%;
+    max-width: 260px;
+    height: 6px;
+    background: #e1e4e8;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  #sideNav {
+    height: 100vh;
+    background: #4672fe;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -550px;
+    transition: 0.5s;
+    z-index: 9;
+    font-weight: bold;
+    display: block;
+  }
+
+  #sideNav ul {
+    list-style-type: none;
+  }
+  #sideNav ul li {
+    transition: 0.5s;
+  }
+  #sideNav li:hover {
+    background: #032c4d;
+  }
+  #sideNav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 16px 16px 0;
+    display: block;
+  }
+}

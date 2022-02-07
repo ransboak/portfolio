@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Boakye Ransford" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfoliostyle.css" />
+    <link
+      rel="shortcut icon"
+      href="images/newlogo2_1.ico"
+      type="image/x-icon"
+    />
+    <title>Ransford's Portfolio</title>
+  </head>
+  <body>
+    <section id="header">
+      <img id="menuBtn" src="images/menu2.jpg" />
+      <div class="nav-bar">
+        <ul class="nav-list">
+          <li><a href="#">CONTACT</a></li>
+
+          <li class="dropdown">
+            <a class="dropbtn" href="#">PORTFOLIO</a>
+            <div class="dropdown-content">
+              <a id="bttn" href="#">Web Development</a>
+              <a id="bttn" href="#">Graphic Design</a>
+              <a id="bttn" href="#">UI/UX</a>
+            </div>
+          </li>
+
+          <li><a href="about.html">ABOUT</a></li>
+
+          <li>
+            <a href="#header">HOME</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lines">
+        <hr id="ha" />
+        <br />
+        <hr id="hb" />
+        <br />
+        <hr id="hc" />
+      </div>
+
+      <a href="#header"> <img id="logo" src="images/newlogo.png" /></a>
+      <div class="header-text">
+        <h1>
+          Hi, I'm Ransford.<br />
+          A freelance<br />
+          <span>FRONT-END DEVELOPER,</span><br /><span>GRAPHIC DESIGNER</span>
+          and<br />
+          <span>UI DESIGNER</span>.
+        </h1>
+      </div>
+      <a href="about.html" >
+        <button class="button" onclick="windows.location.href='about.html'">
+          RESUME
+        </button>
+      </a>
+
+      <div class="socials">
+        <ul>
+          <li>
+            <a href="#"><img src="images/instagram-icon.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/whatsapp-icon.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/linkedin-icon.png" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <nav id="sideNav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+
+        <li><a href="about.html">ABOUT</a></li>
+
+        <li><a href="#port">PORTFOLIO</a></li>
+
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <img id="logo" src="images/newlogo.png"  style="background-color: black;"></a>
+    </nav>
+
+    <script>
+      var sideNav = document.getElementById("sideNav");
+      var menuBtn = document.getElementById("menuBtn");
+
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-550px") {
+          sideNav.style.right = "0";
+        } else {
+          sideNav.style.right = "-550px";
+        }
+      };
+    </script>
+  </body>
+</html>

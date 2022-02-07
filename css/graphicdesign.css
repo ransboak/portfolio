@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.designs p {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(images/hackerwall.jpg);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.nav-bar {
+  margin-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+}
+
+.nav-list {
+  margin-left: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+.nav-list li {
+  float: right;
+}
+.nav-list li a {
+  text-decoration: none;
+  padding: 16px;
+  color: white;
+  font-weight: 600;
+  display: block;
+  transition: 0.5s;
+}
+#menuBtn {
+  display: none;
+}
+#sideNav {
+  display: none;
+}
+#ha {
+  margin: auto;
+  width: 15%;
+  border: 0;
+  border-top: 4px solid #4672fe;
+  border-radius: 10px;
+  transition: 0.5s;
+  animation-duration: 4s;
+  animation-name: haslidein;
+  animation-iteration-count: infinite;
+}
+@keyframes haslidein {
+  0% {
+    width: 15%;
+  }
+  50% {
+    width: 20%;
+  }
+
+  100% {
+    width: 15%;
+  }
+}
+#hb {
+  margin: auto;
+  width: 10%;
+  border: 0;
+  border-top: 4px solid #4672fe;
+  border-radius: 10px;
+  transition: 0.5s;
+  animation-duration: 4s;
+  animation-name: hbslidein;
+  animation-iteration-count: infinite;
+}
+@keyframes hbslidein {
+  0% {
+    width: 10%;
+  }
+  50% {
+    width: 15%;
+  }
+
+  100% {
+    width: 10%;
+  }
+}
+#hc {
+  margin: auto;
+  width: 5%;
+  border: 0;
+  border-top: 4px solid #4672fe;
+  border-radius: 10px;
+  transition: 0.5s;
+  animation-duration: 4s;
+  animation-name: hcslidein;
+  animation-iteration-count: infinite;
+}
+@keyframes hcslidein {
+  0% {
+    width: 5%;
+  }
+  50% {
+    width: 10%;
+  }
+
+  100% {
+    width: 5%;
+  }
+}
+.nav-list li a:hover {
+  background-color: #4672fe;
+  color: white;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+li.dropdown {
+  display: inline-block;
+  transition: 0.5s;
+}
+.dropdown:hover .dropbtn {
+  background-color: #4672fe;
+  transition: 0.5s;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4672fe;
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.dropdown-content a {
+  display: block;
+  text-align: left;
+  transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#bttn:hover {
+  background-color: black;
+  color: white;
+}
+
+#logo {
+  width: 60px;
+  margin: 0 50px 150px;
+}
+
+.header-text span {
+  color: white;
+  font-size: 35px;
+  font-variant: small-caps;
+}
+a:active li {
+  background-color: #4672fe;
+}
+.designs h1 {
+  color: white;
+  text-align: center;
+  margin: 60px 0 50px 0;
+  text-decoration: 1px underline #4672fe;
+}
+
+.designs span {
+  color: #4672fe;
+}
+
+#slider {
+  width: 450px;
+  margin: auto;
+}
+
+.carousel-item img {
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+}
+button {
+  color: black;
+}
+.socials {
+  position: fixed;
+  top: 60%;
+  right: 0%;
+  animation-duration: 3s;
+  animation-name: socialslidein;
+  animation-iteration-count: 1;
+}
+@keyframes socialslidein {
+  0% {
+    top: 120%;
+  }
+  100% {
+    top: 60%;
+  }
+}
+
+.socials ul {
+  list-style-type: none;
+}
+
+.socials img {
+  width: 50px;
+  transition: 0.5s;
+}
+.socials img:hover {
+  width: 80px;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-list li a {
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 550;
+  }
+  #slider {
+    width: 50%;
+    margin: auto;
+  }
+
+  .carousel-item img {
+    width: 300px;
+    height: 300px;
+  }
+
+  #logo {
+    width: 60px;
+    margin: 5px 50px 80px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  #menuBtn {
+    display: block;
+    height: 50px;
+    width: 40px;
+    position: fixed;
+    top: 16;
+    right: 0;
+    z-index: 10;
+  }
+  .nav-bar {
+    display: none;
+  }
+  #slider {
+    width: 320px;
+    margin: auto;
+  }
+  .carousel-item img {
+    height: 250px;
+    width: 200px;
+  }
+  #sideNav {
+    height: 100vh;
+    background: #4672fe;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -550px;
+    transition: 0.5s;
+    z-index: 9;
+    font-weight: bold;
+    display: block;
+  }
+  #sideNav ul {
+    list-style-type: none;
+  }
+  #sideNav ul li {
+    transition: 0.5s;
+  }
+  #sideNav li:hover {
+    background: #032c4d;
+  }
+  #sideNav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+  }
+  #ha {
+    margin-top: 10px;
+    width: 20%;
+  }
+  @keyframes haslidein {
+    0% {
+      width: 20%;
+    }
+    50% {
+      width: 25%;
+    }
+
+    100% {
+      width: 20%;
+    }
+  }
+
+  #logo {
+    margin-top: 30px;
+  }
+}
